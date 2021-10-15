@@ -210,7 +210,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row mt-6">
-                    <div className="flex-none w-28 sm:w-28 md:w-48 lg:w-48 mx-auto sm:mx-auto md:mx-0 lg:mx-0 pl-0 sm:pl-0 md:pl-5 lg:pl-5">
+                    <div className="flex-none w-32 sm:w-32 md:w-48 lg:w-48 mx-auto sm:mx-auto md:mx-0 lg:mx-0 pl-0 sm:pl-0 md:pl-5 lg:pl-5">
                         <a href="#" id="search-options-link" className="block sm:block md:hidden lg:hidden text-center w-28 mx-auto bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-xs leading-4 font-medium text-gray-700 hover:bg-gray-50" onClick={() => toggleSearchOptions(event)}>Search Options</a>
                         <div id="search-options" className="hidden sm:hidden md:block lg:block">
                             <p className="text-lg text-blue-450 font-bold">Distance</p>
