@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import React, { useState } from "react";
 import doctors from './api/doctors.json';
-import PrintSearchResults from './components/printsearchresults'
+import PrintSearchResults from '../components/printsearchresults'
 
 export default function Home() {
     
