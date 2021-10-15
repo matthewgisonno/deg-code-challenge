@@ -8,7 +8,7 @@ function PrintSearchResults(props) {
     return (
         <div>
             {props.filters}
-            <p className="text-xl text-gray-350">
+            <p className="text-xl text-gray-350 text-center sm:text-center md:text-left lg:text-left mt-5 sm:mt-5 md:mt-0 lg:mt-0">
                 Total Results for {props.zipcode}: 
                 <span className="ml-3" id="total-results-num">
                     {props.doctors

@@ -203,14 +203,14 @@ export default function Home() {
             <main className="mt-6 mx-5 sm:mx-5 md:mx-10 lg:mx-20">
                 <div id="hero-image" className="bg-cover bg-center h-52 sm:h-52 md:h-64 lg:h-96 w-full">&nbsp;</div>
                 <div id="search-box" className="mt-7 bg-gray-150 p-6">
-                    <p className="text-gray-450 text-lg">Zip Code</p>
-                    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-items-end">
+                    <p className="text-gray-450 text-lg text-center sm:text-center md:text-left lg:text-left">Zip Code</p>
+                    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-items-center sm:justify-items-center md:justify-items-end lg:justify-items-end">
                         <input type="text" name="search-zip-code" id="search-zip-code" maxLength="5" onKeyPress={(event) => {if (!/[0-9]/.test(event.key)) {event.preventDefault();}}} onKeyUp={handleSearchOnKeyUp} className="float-left h-10 block w-full border border-gray-400 rounded-md px-2"></input>
                         <button onClick={searchButtonHandleClick} name="search-button" id="search-button" className="w-44 h-11 text-base bg-emerald-450 text-white rounded-md mt-5 sm:mt-5 md:mt-0 lg:mt-0">Search</button>
                     </div>
                 </div>
                 <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row mt-6">
-                    <div className="flex-none w-48 mx-auto sm:mx-auto md:mx-0 lg:mx-0 pl-5">
+                    <div className="flex-none w-28 sm:w-28 md:w-48 lg:w-48 mx-auto sm:mx-auto md:mx-0 lg:mx-0 pl-0 sm:pl-0 md:pl-5 lg:pl-5">
                         <a href="#" id="search-options-link" className="block sm:block md:hidden lg:hidden text-center w-28 mx-auto bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-xs leading-4 font-medium text-gray-700 hover:bg-gray-50" onClick={() => toggleSearchOptions(event)}>Search Options</a>
                         <div id="search-options" className="hidden sm:hidden md:block lg:block">
                             <p className="text-lg text-blue-450 font-bold">Distance</p>
@@ -245,7 +245,7 @@ export default function Home() {
                                 defaultavatar={defaultAvatar}
                             />
                         ) : (
-                            <div id="error-msg-zip-code">Please input a valid Zip Code in the above search box to show results.</div>
+                            <div id="error-msg-zip-code" className="text-center sm:text-center md:text-left lg:text-left">Please input a valid Zip Code in the above search box to show results.</div>
                         )}
                     </div>
                 </div>
